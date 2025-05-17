@@ -40,6 +40,20 @@ a{
     text-decoration: none;
     transition: all .25s ease-in-out;
 }
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(231, 231, 231, 0.756); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(246, 130, 36); 
+  border-radius: 10px;
+}
+
 .container-xl{
     width: 100%;
     max-width: 1394px;
@@ -657,6 +671,9 @@ a{
     animation: rotate 14s linear infinite;
     transition: .3s linear;
     display: flex;
+}
+.spinner-link svg{
+    width: 100%;
 }
 
 @keyframes rotate{
@@ -2143,6 +2160,9 @@ top: -2px;
         color: var(--color-orange-800);
         margin-right: 12px;
     }
+    .accordion-header span{
+        text-align: left;
+    }
 
 /* Media-querys */
 @media (max-width:1600px){
@@ -2869,6 +2889,13 @@ top: -2px;
     .scroll-top svg {
         color: var(--color-orange-800);
         width: 22px;
+    }
+    .accordion-header {
+        align-items: flex-start;
+    }
+    .trip-local{
+        max-height: 340px;
+        overflow: auto;
     }
 }
 

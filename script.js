@@ -107,29 +107,37 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // text-slider
 window.addEventListener("load", () => {
-    const allTracks = document.querySelectorAll(".text-slide-track2");
+  const allTracks = document.querySelectorAll(".text-slide-track2");
 
-    allTracks.forEach(track => {
-      const slider = track.querySelector(".text-slide");
+  allTracks.forEach(track => {
+    const slider = track.querySelector(".text-slide");
 
-      if (!slider.dataset.cloned) {
-        slider.innerHTML += slider.innerHTML;
-        slider.dataset.cloned = "true";
-      }
+    if (!slider.dataset.cloned) {
+      slider.innerHTML += slider.innerHTML;
+      slider.dataset.cloned = "true";
+    }
 
+    // Wait until next layout frame + extra time to ensure rendering on mobile
+    setTimeout(() => {
       requestAnimationFrame(() => {
-        const originalItems = [...slider.children].slice(0, slider.children.length / 2);
-        const totalWidth = originalItems.reduce((sum, el) => sum + el.offsetWidth, 0);
+        const totalWidth = slider.scrollWidth / 2;
+
+        if (totalWidth === 0) {
+          console.warn("Mobile: scrollWidth is 0. Check styles or visibility.");
+          return;
+        }
 
         track.style.setProperty("--scroll-width", `${totalWidth}px`);
 
-        const speed = 100; 
+        const speed = 100;
         const duration = totalWidth / speed;
 
         track.style.animation = `scrollText linear ${duration}s infinite`;
       });
-    });
+    }, 50); // You can adjust this delay if needed
+  });
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.has-dropdown').forEach(item => {
