@@ -43,8 +43,10 @@ var od1 = new Odometer({
   }, {
     threshold: 0.5 
   });
-  observer.observe(document.getElementById('odometer1'));
-  observer.observe(document.getElementById('odometer2'));
+
+  
+observer.observe(document.getElementById('odometer1'));
+observer.observe(document.getElementById('odometer2'));
 const serviceWrappers = document.querySelectorAll('.service-title-wrapper');
 
 serviceWrappers.forEach(serviceWrapper => {
@@ -129,21 +131,22 @@ window.addEventListener("load", () => {
     });
 });
 
-document.querySelectorAll('.has-dropdown').forEach(item => {
-  item.addEventListener('click', () => {
-    const menu = item.nextElementSibling;
-    const arrow = item.querySelector('.dropdown-arrow');
-    document.querySelectorAll('.dropdown-menu-list-sm').forEach(drop => {
-      if (drop !== menu) drop.classList.remove('open');
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.has-dropdown').forEach(item => {
+    item.addEventListener('click', () => {
+      const menu = item.nextElementSibling;
+      const arrow = item.querySelector('.dropdown-arrow');
+      document.querySelectorAll('.dropdown-menu-list-sm').forEach(drop => {
+        if (drop !== menu) drop.classList.remove('open');
+      });
+      document.querySelectorAll('.dropdown-arrow').forEach(a => {
+        if (a !== arrow) a.classList.remove('rotate');
+      });
+      menu.classList.toggle('open');
+      arrow.classList.toggle('rotate');
     });
-    document.querySelectorAll('.dropdown-arrow').forEach(a => {
-      if (a !== arrow) a.classList.remove('rotate');
-    });
-    menu.classList.toggle('open');
-    arrow.classList.toggle('rotate');
   });
 });
-
 
 
 // document.addEventListener('contextmenu', function(e) {
