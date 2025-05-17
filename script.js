@@ -157,20 +157,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// document.addEventListener('contextmenu', function(e) {
-//     e.preventDefault();
-//     alert('Content is protected. Right-click is disabled.');
-//   });
-//   document.addEventListener('keydown', function(e) {
-//     if (
-//       e.key === 'F12' ||
-//       (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key.toUpperCase())) ||
-//       (e.ctrlKey && e.key.toUpperCase() === 'U')
-//     ) {
-//       e.preventDefault();
-//       alert('Content is protected.');
-//     }
-// });
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('Content is protected. Right-click is disabled.');
+  });
+  document.addEventListener('keydown', function(e) {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(e.key.toUpperCase())) ||
+      (e.ctrlKey && e.key.toUpperCase() === 'U')
+    ) {
+      e.preventDefault();
+      alert('Content is protected.');
+    }
+});
 
 
 
