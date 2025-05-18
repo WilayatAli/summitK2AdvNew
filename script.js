@@ -56,9 +56,9 @@ serviceWrappers.forEach(serviceWrapper => {
         const wrapperHeight = serviceWrapper.offsetHeight;
         const offsetX = e.offsetX;
         const offsetY = e.offsetY;
-        const moveX = (offsetX / wrapperWidth - 0.5) * 550; 
+        const moveX = (offsetX / wrapperWidth - 0.5) * 400; 
         const moveY = (offsetY / wrapperHeight - 0.5) * 100; 
-        hoverImage.style.transform = `translate(${moveX + 300}px, ${moveY + 10}px)`;
+        hoverImage.style.transform = `translate(${moveX + 200}px, ${moveY + 10}px)`;
     });
 });
 const words = ["development", "composition", "explanation"];

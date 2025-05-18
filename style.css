@@ -1837,6 +1837,9 @@ top: -2px;
     width: 24px;
 }
 .service-section{
+    overflow: hidden !important;
+}
+#service{
     overflow: hidden;
 }
 .blog-wrapper{
