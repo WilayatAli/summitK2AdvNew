@@ -341,7 +341,7 @@
     line-height: 1.5;
     font-weight: 600;
     text-transform: uppercase;
-    background-color: #ff9d3d ;
+    background-color: #ff9d3d;
     border: none;
     cursor: pointer;
     border-radius: 100px;
@@ -364,7 +364,6 @@
 .email-aside:hover{
     background-color:#16243d !important;
 }
-
 .aside-question{
     margin-top: 50px;
     padding: 28px 30px 30px !important;
@@ -539,11 +538,6 @@
   margin-bottom: 20px;
   color: #2c3e50;
 }
-
-
-
-
-
 
 .accordion{
     padding-left: 40px;
@@ -981,6 +975,30 @@
 /* pagination End*/
 .pagetwoblockcardWrapper{
     justify-content: flex-start;
+}
+.blog-image-1 img{
+    width: 100%;
+    object-fit: cover;
+}
+.blog-image-2 img{
+    width: 100%;
+    object-fit: cover;
+}
+.blog-image-3 img{
+    width: 100%;
+    object-fit: cover;
+}
+.blog-image-4 img{
+    width: 100%;
+    object-fit: cover;
+}
+.blog-image-5 img{
+    width: 100%;
+    object-fit: cover;
+}
+.blog-image-6 img{
+    width: 100%;
+    object-fit: cover;
 }
 
 /* responsive */

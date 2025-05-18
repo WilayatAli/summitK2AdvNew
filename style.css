@@ -28,10 +28,10 @@ body{
     text-transform: none;
     font-style: normal;
 
-    user-select: none;
+    /* user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
+    -ms-user-select: none; */
 }
 ul{
     list-style: none;
@@ -2049,6 +2049,7 @@ top: -2px;
     color: black;
     padding-block: 150px;
     position: relative;
+    padding-inline: 20px;
     z-index: 999;
     font-family: "Kaushan Script", cursive;
 }
@@ -2162,6 +2163,32 @@ top: -2px;
     }
     .accordion-header span{
         text-align: left;
+    }
+    .head-title h1{
+        font-size: 40px;
+        line-height: 48px;
+        color: black;
+        padding-block: 150px;
+        position: relative;
+        padding-inline: 20px;
+        z-index: 999;
+        font-family: "Kaushan Script", cursive;
+    }
+    .intro h2{
+        font-size: 18px;
+        font-weight: 600;
+        color: #212121;
+        line-height: 26px;
+        margin-top: 24px;
+        margin-bottom: 14px;
+    }
+    .intro p{
+        font-size: 16px;
+        font-weight: 400;
+        color: #383838;
+        line-height: 22px;
+        margin-top: 2px;
+        margin-bottom: 8px;
     }
 
 /* Media-querys */
@@ -2793,12 +2820,12 @@ top: -2px;
         overflow: hidden;
     }
     .slider-text {
-    font-size: 28px;
-    line-height: 56px;
+        font-size: 28px;
+        line-height: 56px;
     }
     .text-slider-arrow {
-    height: 40px;
-    width: 40px;
+         height: 40px;
+        width: 40px;
     }
     .text-slider-inner {
         display: flex;
@@ -2874,11 +2901,14 @@ top: -2px;
         padding-inline: 15px;
     }
     .contcat-us h2 {
-        font-size: 34px;
+        font-size: 27px;
+        line-height: 37px;
+        padding-inline: 20px;
         color: #16243d;
         padding-block: 112px;
         position: relative;
         z-index: 999;
+        text-align: center;
     }
     .scroll-top {
         right: 13px;
@@ -2897,8 +2927,13 @@ top: -2px;
         max-height: 340px;
         overflow: auto;
     }
+    .head-title h1 {
+        font-size: 32px;
+        line-height: 34px;
+        z-index: 999;
+        text-align: center;
+    }
 }
-
 @media (max-width:766px){
     .award-num {
         max-width: 40px;

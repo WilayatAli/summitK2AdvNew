@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.blog-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: space-between;
+}
+.article{
+    width: 75%;
+}
+.blog-aside{
+    width: 25%;
+    display: inline-block;
+}
+.blog-image{
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.blog-image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-container p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #161616;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.blog-container h2{
+    font-size: 20px;
+    line-height: 26px;
+    color: black;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.blog-container strong{
+    margin-top: 8px;
+    margin-bottom: 6px;
+    display: inline-block;
+    color: #161616;
+}
+.blog-container ul li{
+    font-size: 16px;
+    line-height: 24px;
+    color: #161616;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.blog-container h3{
+    font-size: 20px;
+    line-height: 26px;
+    color: rgb(40, 34, 34);
+    margin-top: 34px;
+    margin-bottom: 16px;
+}
+
+.blog-container a{
+    color: #0d5c81;
+}
+
+
+.blog-aside {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+}
+.aside-image{
+    width: 100%;
+    max-height: 260px;
+    overflow: hidden;
+}
+
+.aside-image img{
+    width: 100%;
+}
+
+.blog-aside h5 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #161616;
+}
+
+.related-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-card {
+    display: flex;
+    gap: 15px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-3px);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h2 {
+    font-size: 1em;
+    margin: 0 0 0.5em;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+.card-content h2:hover{
+    color: #ff9d3d;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #555;
+}
+.blog-title h1{
+    font-size: 40px;
+    line-height: 48px;
+    color: black;
+    padding-block: 150px;
+    position: relative;
+    padding-inline: 20px;
+    z-index: 999;
+    font-family: "Kaushan Script", cursive;
+}
+
+@media(max-width:1024px){
+    .blog-container{
+        flex-direction: column;
+    }
+    .article {
+        width: 100%;
+    }
+    .blog-aside {
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+@media(max-width:767px){
+    .blog-title h1 {
+        font-size: 32px;
+        line-height: 34px;
+        z-index: 999;
+        text-align: center;
+    }
+}
