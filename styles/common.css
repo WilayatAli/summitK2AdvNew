@@ -1035,9 +1035,6 @@
     .blogCradWarapper {
         padding-inline: 0px;
     }
-    .myblogHeading{
-        margin-bottom: 40px;
-    }
 }
 @media only screen and (max-width: 576px){
     .blogBgHeading{
@@ -1051,16 +1048,19 @@
         border-bottom: 1px solid #ddd;
         max-width: 89.6%;
         width: 100%;
+        display: none;
+        margin-bottom: 0px !important;
     }
     .blogHeading {
         margin-top: 50px;
-        padding-bottom: 20px;
+        margin-bottom: 0px;
     }
 }
 
 @media only screen and (max-width: 575px){
     .myblogHeading {
         text-align: left;
+        margin-bottom: 0px !important;
     }
 }
 
