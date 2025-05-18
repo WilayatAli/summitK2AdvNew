@@ -1,3 +1,19 @@
+const burgerMenuBtn = document.querySelector('.burger-menu-btn');
+const sideMenu = document.querySelector('.side-menu-wrapper');
+const overlay = document.querySelector('.overlay-bg');
+const closeBtn = document.querySelector('.arrow-cross');
+function openMenu() {
+    sideMenu.classList.add('active'); 
+    overlay.classList.add('active'); 
+}
+function closeMenu() {
+    sideMenu.classList.remove('active'); 
+    overlay.classList.remove('active'); 
+}
+burgerMenuBtn.addEventListener('click', openMenu);
+closeBtn.addEventListener('click', closeMenu);
+overlay.addEventListener('click', closeMenu);
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.has-dropdown').forEach(item => {
     item.addEventListener('click', () => {
