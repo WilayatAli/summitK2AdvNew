@@ -220,10 +220,9 @@ scrollBtn.addEventListener('click', () => {
     });
 });
 
-
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
-    alert('Content is protected. Right-click is disabled.');
+    alert('Content is protected.');
   });
   document.addEventListener('keydown', function(e) {
     if (

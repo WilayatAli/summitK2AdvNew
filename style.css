@@ -179,13 +179,14 @@ a{
     width: 100%;
     min-width: 270px;
     box-shadow: rgba(53, 57, 69, 0.15) 0px 0px 60px 0px;
-    background-color: #ffffffbf;
+    background-color: #ffffffcc;
     transition: 500ms linear;
     transition: all 500ms linear 0ms;
     transform: rotateX(-90deg);
     transform-origin: 0 0;
     opacity: 0;
-    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .menu-list:hover .drop-down-menu-wrapper{
     transform: rotateX(0deg);
@@ -584,7 +585,7 @@ a{
     font-weight: 500;
     line-height: 50px;
     letter-spacing: -.25px;
-    margin-right: 40px;
+    margin-right: 20px;
     position: relative;
 }
 .vm-title::before{
@@ -1277,13 +1278,14 @@ a{
 .faq-shape img{
     width: 100%;
 }
-.award-bg{
-    background-image: url(./images/award-bg.png);
+.faq-bg{
+    background-image: url(./images/faq.png);
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 100px;
+    background-position:left bottom;
 }
-.award-bg::before {
+.faq-bg::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1414,12 +1416,10 @@ a{
     left: 0;
     bottom: 0;
     width: 0%;
-    background-color: #7fdb6690;
+    background-color: #52c721;
     transition: width 0.3s ease-in-out;
-    z-index: 0;
-
+    z-index: -1;
 }
-
 .hero-contact-link:hover::before {
     width: 100%;
 }
@@ -1635,10 +1635,14 @@ a{
     .footer-section {
         --anim-speed: 55s;  /* slower animation on mobile */
     }
+    .faq-shape {
+        opacity: 0.1;
+    }
+    .footer-bg{
+        background-position: bottom;
+        bottom: 80px;
+    }
 }
-
-
-
 .footer-box-left{
     width: 33.33333333%;
     display: flex;
@@ -1727,6 +1731,7 @@ top: -2px;
   max-width: 100px;
   animation: heartbeat 10s infinite ease-in-out;
   transition: transform 0.3s ease;
+  border-radius: 50px;
 }
 
 .footer-info-wrapper{
@@ -2372,7 +2377,7 @@ top: -2px;
     .award-num{
         max-width: 150px;
     }
-    .award-bg::before {
+    .faq-bg::before {
         display: none;
     }
     .blog-post-card {
@@ -2386,7 +2391,7 @@ top: -2px;
         position: relative;
         right: -8px;
     }
-    .award-bg{
+    .faq-bg{
      background-position: bottom;
     }
     .award-section{
@@ -2729,7 +2734,7 @@ top: -2px;
         text-align: center;
     }
     .footer-adress{
-        margin-top: 30px;
+        margin-top: 5px;
         width: 100%;
         padding-inline: 0px;
     }

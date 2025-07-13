@@ -336,7 +336,7 @@
     right: 10px;
 }
 
-.whatsapp-aside-tour{
+.WhatsApp-aside-tour{
     font-size: 16px;
     line-height: 1.5;
     font-weight: 600;
@@ -355,7 +355,7 @@
     margin-top: 26px;
     transition: .3s ease-in-out;
 }
-.whatsapp-aside-tour:hover{
+.WhatsApp-aside-tour:hover{
     background-color: #16243d;
 }
 .email-aside{
